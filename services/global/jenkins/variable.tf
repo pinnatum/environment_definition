@@ -1,5 +1,5 @@
 variable "instance_type" {
-  type = string
+  type        = string
   description = "instance_type for ec2"
-  default = "%instance_type%"
+  default     = "%instance_type%"
 }
