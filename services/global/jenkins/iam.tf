@@ -1,8 +1,8 @@
 module "iam_policy" {
-  source  = "terraform-aws-modules/iam/aws//modules/iam-policy"
+  source = "terraform-aws-modules/iam/aws//modules/iam-policy"
 
-  name        = "${var.dx_prefix_resource_name}-iam-policy"
-  path        = "/"
+  name = "${var.dx_prefix_resource_name}-iam-policy"
+  path = "/"
 
   policy = <<EOF
 {
@@ -22,7 +22,7 @@ EOF
 
 
 module "iam_assumable_roles" {
-  source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-roles"
+  source = "terraform-aws-modules/iam/aws//modules/iam-assumable-roles"
 
 
   create_admin_role = true

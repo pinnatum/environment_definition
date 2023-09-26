@@ -1,24 +1,22 @@
 dev:
   global:
-    r53: "testing"
-    color: green
+    r53-hosted-zone-name: "dev.pinnatum.co.uk"
+    r53-hosted-zone-id: "Z04898713KXYJFAM47JJ5"
   eu-west-1:
-    vpc_id: "123232"
-    color: maroon
-    subnet: 
+    vpc_id: "vpc-057e121deead62e8f"
+    subnet: "subnet-0e7a2bc97457d3961,subnet-00094d7ac5a17de27,subnet-09f63d2a1ff7761dd"
   eu-west-2:
-    vpc_id: 
-    subnet: "him"
+    vpc_id: "vpc-057e145ceead64ezc"
+    subnet: "subnet-03513da711d1f452a,subnet-061487a09941205ba,subnet-0345b048f7769ac61"
 
 prod: 
   global:
-    r53: "123456"
-    color: red
+    r53-hosted-zone-name: "pinnatum.co.uk"
+    r53-hosted-zone-id: "Z04898713KXYJFAM47JJ5"
   eu-west-1:
-    vpc_id: "123232"
-    color: maroon
-    subnet: 
+    vpc_id: "vpc-0674f26407d2c3b2d"
+    subnet: "subnet-063a393f2505f5307,subnet-04f6c4a00bde9c33d,subnet-0551a1fdcfd23e745"
   eu-west-2:
-    vpc_id: 
-    subnet: "him"
+    vpc_id: "vpc-03116b7013961c7a3"
+    subnet: "subnet-0b4f656283523e1ce,subnet-05a9e3235daf16416,subnet-029f4cf03386ff79f"
   
